@@ -104,6 +104,9 @@ unique(df_forestal$Especie)  # Muestra las especies únicas presentes en el data
 ggplot(df_forestal, aes(x = Especie, y = Altura_m, fill = Especie)) +
   geom_boxplot()  # Crea un boxplot para comparar la altura entre especies
 
+#fill indica segun que variable se colorearan los bloques
+#+ geom_boxplot indica que tipo de grafico queremos construir
+
 # -------------------------------
 # Filtrar especies de interés
 # -------------------------------
@@ -111,6 +114,8 @@ ggplot(df_forestal, aes(x = Especie, y = Altura_m, fill = Especie)) +
 df_especies_interes <- df_forestal %>% 
   filter(Especie %in% c("Nothofagus dombeyi", "Nothofagus pumilio"))
 # Se filtran solo las filas que pertenecen a esas dos especies
+# %<% encadena funciones (al dataframe aplicale lo siguiente...)
+# %in% indica si el factor esta en el vector, se usa para que en el filtro queden solo las especies indicadas
 
 unique(df_especies_interes$Especie)  # Verifica las especies presentes tras el filtrado
 
