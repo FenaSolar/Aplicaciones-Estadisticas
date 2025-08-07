@@ -45,7 +45,7 @@ rm(b)  # Elimina el objeto 'b'
 # Vectores
 # -------------------------------
 
-numeros <- c(1, 5, 9, 52, 64, 87)  # Se crea un vector numérico con la función c()
+edad <- c(23, 24, 25)  # Se crea un vector numérico con la función c()
 nombres <- c("fernando", "francisco", "javier")  # Vector de texto (character)
 
 # -------------------------------
