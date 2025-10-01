@@ -14,7 +14,7 @@ library(tidyverse)   # Conjunto de paquetes para manipulación y visualización 
 # -------------------------------
 
 # Cambiar el nombre o la ruta del archivo si es necesario
-penguins <- read_csv("data/04_penguins.csv")
+penguins <- read_csv("Data/penguins.csv")
 
 # -------------------------------
 # Revisión general y limpieza de datos
